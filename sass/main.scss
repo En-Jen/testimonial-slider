@@ -36,11 +36,26 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media screen and (min-width: 900px) {
+        background-size: 42.3%;
+    }
 }
 
 .container {
     width: 100%;
-    max-width: 70rem;
+    max-width: 68rem;
+
+    @media screen and (min-width: 900px) {
+        max-width: 110rem;
+        padding: 4rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 160rem;
+    }
+
+
 }
 
 .slider {
@@ -52,34 +67,79 @@ body {
     width: 100%;
     text-align: center;
 
+    @media screen and (min-width: 900px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: left;
+    }
+
     &__img-container {
         width: 100%;
         background-image: url(../img/pattern-bg.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        padding: 2.4rem;
+        padding: 2.8rem;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 2.5rem;
+
+        @media screen and (min-width: 600px) {
+            padding: 3.5rem;
+        }
+
+        @media screen and (min-width: 900px) {
+            padding: 5.5rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 8.5rem;
+        }
     }
 
     &__img {
         display: block;
         //max-width: 77%;
-        width: 25.4rem;
+        //width: 25.4rem;
+        width: 18rem;
         border-radius: 6px;
         box-shadow: 0 17px 47px rgba(76, 40, 131, 0.479);
+
+        @media screen and (min-width: 340px) {
+            width: 25.4rem;
+        }
+
+        @media screen and (min-width: 600px) {
+            width: 34rem;
+        }
+
+        @media screen and (min-width: 900px) {
+            width: 40rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 54rem;
+        }
     }
 
     &__text {
         padding: 2rem 3.2rem;
         background-image: url(../img/pattern-quotes.svg);
         background-repeat: no-repeat;
-        //background-size: 15%;
         background-size: 60px;
         background-position: top;
+
+        @media screen and (min-width: 900px) {
+            transform: translateX(10rem);
+            background-position: 23% 0%;
+            background-size: 80px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            background-size: 120px;
+        }
     }
 
     &__quote {
@@ -87,23 +147,50 @@ body {
         line-height: 2.4rem;
         font-weight: 300;
         margin-bottom: 2rem;
+
+        @media screen and (min-width: 900px) {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 3.2rem;
+            line-height: 4.4rem;
+        }
     }
 
     &__author {
         display: flex;
         flex-direction: column;
+
+        @media screen and (min-width: 900px) {
+            flex-direction: row;
+        }
     }
 
     &__name {
         font-size: 1.5rem;
         font-weight: 700;
         margin-bottom: .3rem;
+
+        @media screen and (min-width: 900px) {
+            margin-bottom: 0;
+            margin-right: 1.2rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 2rem;
+        }
     }
 
     &__job {
         color: $color-gray;
         font-size: 1.5rem;
         font-weight: 500;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -120,9 +207,17 @@ body {
     border-radius: 50px;
     overflow: hidden;
     position: absolute;
-    top: 257px;
+    top: 183px;
     left: 50%;
     transform: translateX(-50%);
+
+    @media screen and (min-width: 340px) {
+        top: 257px;
+    }
+
+    @media screen and (min-width: 600px) {
+        top: 344px;
+    }
 
     .prev, .next {
         width: 50%;
@@ -160,59 +255,3 @@ body {
     }
 
 }
-
-
-
-// .container {
-//     padding: 2.425rem;
-//     min-height: 100vh;
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .slider {
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//     max-width: 850px;
-//     margin: 0 auto;
-// }
-
-// .slide {
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     text-align: center;
-
-//     &__img-container {
-//         //width: 100%;
-//         //height: 100%;
-//         width: 32.65rem;
-//         height: 30.75rem;
-//         background-image: url(../img/pattern-bg.svg);
-//         background-repeat: no-repeat;
-//         background-size: contain;
-//         background-position: center;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//     }
-
-//     &__img {
-//         display: block;
-//         width: 25.4rem;
-//         height: 25.3rem;
-//         //width: 77.7%;
-//         //height: 77.7%;
-//         margin: 0 auto;
-//     }
-
-//     &__text {
-//         //text-align: center;
-//     }
-// }
-
