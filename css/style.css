@@ -50,7 +50,9 @@ body {
 
 .slide {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
   @media screen and (min-width: 900px) {
     .slide {
       display: flex;
@@ -110,7 +112,7 @@ body {
       .slide__text {
         transform: translateX(19rem);
         background-size: 120px;
-        padding: 6rem 0 0 0; } }
+        padding: 7rem 0 0 0; } }
   .slide__quote {
     font-size: 1.8rem;
     line-height: 2.4rem;
@@ -150,9 +152,6 @@ body {
       .slide__job {
         font-size: 2rem; } }
 
-.slide-2 {
-  display: none; }
-
 .buttons {
   width: 8rem;
   height: 4rem;
@@ -161,8 +160,8 @@ body {
   overflow: hidden;
   position: absolute;
   top: 187px;
-  left: 50%;
-  transform: translateX(-50%); }
+  right: 50%;
+  transform: translateX(50%); }
   @media screen and (min-width: 340px) {
     .buttons {
       top: 261px; } }
@@ -172,13 +171,13 @@ body {
   @media screen and (min-width: 900px) {
     .buttons {
       top: 435px;
-      left: 65%; } }
+      right: 365px; } }
   @media screen and (min-width: 1200px) {
     .buttons {
       width: 11.2rem;
       height: 5.6rem;
       top: 597px;
-      left: 63.2%; } }
+      right: 505px; } }
   .buttons .prev, .buttons .next {
     width: 50%;
     height: 100%;
@@ -200,4 +199,7 @@ body {
   font-size: 11px;
   text-align: center;
   position: absolute;
-  bottom: 2rem; }
+  bottom: 1rem; }
+  .attribution a {
+    color: #8A6BD2;
+    text-decoration: none; }
