@@ -70,8 +70,18 @@ body {
 .slide {
     width: 100%;
     text-align: center;
+    animation: 1s fade;
     display: flex;
     flex-direction: column;
+
+    @keyframes fade {
+        from {
+            opacity: .3;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 
     @media screen and (min-width: 900px) {
         display: flex;
@@ -254,7 +264,7 @@ body {
 
     .next:hover,
     .prev:hover {
-        background-color: hsla(266, 34%, 88%, 0.527);
+        background-color: hsl(300, 60%, 96%);
     }
 }
 
@@ -265,12 +275,29 @@ body {
     bottom: 1rem;
 
     a {
-        color: #8A6BD2;
+        color: hsl(258, 47%, 45%);
         text-decoration: none;
+        position: relative;
+        transition: color .3s;
     }
 
-}
+    a:hover {
+        color: hsl(302, 51%, 62%);
+    }
 
-// .slide-2 {
-//     display: none;
-// }
+    a::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: hsl(302, 51%, 62%);
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        transform: scaleX(0);
+        transition: all .3s;
+    }
+
+    a:hover::after {
+        transform: scaleX(1);
+    }
+}
