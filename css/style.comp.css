@@ -90,7 +90,7 @@ body {
     display: block;
     width: 18rem;
     border-radius: 6px;
-    box-shadow: 0 17px 47px rgba(70, 31, 128, 0.479); }
+    box-shadow: -3px 41px 70px -52px #5143be; }
     @media screen and (min-width: 340px) {
       .slide__img {
         width: 25.4rem; } }
