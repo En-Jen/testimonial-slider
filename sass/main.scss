@@ -48,20 +48,23 @@ body {
 
     @media screen and (min-width: 900px) {
         max-width: 110rem;
-        padding: 4rem;
+        padding: 4rem 4rem 4rem 0;
     }
 
     @media screen and (min-width: 1200px) {
         max-width: 160rem;
     }
 
-
+    @media screen and (min-width: 1480px) {
+        padding: 0;
+    }
 }
 
 .slider {
     width: 100%;
     max-width: 1400px;
     position: relative;
+    margin: 0 auto;
 }
 
 .slide {
@@ -96,7 +99,7 @@ body {
         }
 
         @media screen and (min-width: 1200px) {
-            padding: 8.5rem;
+            padding: 8.3rem;
         }
     }
 
@@ -106,7 +109,7 @@ body {
         //width: 25.4rem;
         width: 18rem;
         border-radius: 6px;
-        box-shadow: 0 17px 47px rgba(76, 40, 131, 0.479);
+        box-shadow: 0 17px 47px rgba(70, 31, 128, 0.479);
 
         @media screen and (min-width: 340px) {
             width: 25.4rem;
@@ -134,12 +137,15 @@ body {
 
         @media screen and (min-width: 900px) {
             transform: translateX(10rem);
-            background-position: 23% 0%;
+            background-position: 17% 0%;
             background-size: 80px;
+            padding: 2rem 0 0 0;
         }
 
         @media screen and (min-width: 1200px) {
+            transform: translateX(19rem);
             background-size: 120px;
+            padding: 6rem 0 0 0; 
         }
     }
 
@@ -157,6 +163,7 @@ body {
         @media screen and (min-width: 1200px) {
             font-size: 3.2rem;
             line-height: 4.4rem;
+            margin-bottom: 3.6rem;
         }
     }
 
@@ -176,7 +183,7 @@ body {
 
         @media screen and (min-width: 900px) {
             margin-bottom: 0;
-            margin-right: 1.2rem;
+            margin-right: 1rem;
         }
 
         @media screen and (min-width: 1200px) {
@@ -229,7 +236,7 @@ body {
         width: 11.2rem;
         height: 5.6rem;
         top: 597px;
-        left: 62.2%;
+        left: 63.2%;
     }
 
     .prev, .next {
