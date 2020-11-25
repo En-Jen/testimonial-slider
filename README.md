@@ -10,7 +10,8 @@
 
 ## The Challenge 💪
 
-The challenge is to build out this testimonial slider and get it looking as close to the design as possible.
+Challenge by [Frontend Mentor](https://www.frontendmentor.io/) to build out this testimonial slider and get it looking as close to the design as possible.
+Click [here](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL) to see the challenge.
 
 Users should be able to: 
 
